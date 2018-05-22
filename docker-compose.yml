@@ -12,6 +12,8 @@ services:
       - weblate-data:/app/data
     env_file:
       - ./environment
+    environment:
+      - WEBLATE_ADMIN_PASSWORD=${ADMIN_PASSWORD}
     restart: always
     depends_on:
       - database

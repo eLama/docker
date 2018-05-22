@@ -781,7 +781,7 @@ REST_FRAMEWORK = {
         'rest_framework.throttling.UserRateThrottle'
     ),
     'DEFAULT_THROTTLE_RATES': {
-        'anon': '100/day',
+        'anon': '100/sec',
         'user': '100/sec'
     },
     'DEFAULT_PAGINATION_CLASS': (
